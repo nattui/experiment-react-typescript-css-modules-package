@@ -24,6 +24,9 @@ importers:
       prettier-plugin-packagejson:
         specifier: ^2.5.15
         version: 2.5.15(prettier@3.5.3)
+      prettier-plugin-sort-json:
+        specifier: ^4.1.1
+        version: 4.1.1(prettier@3.5.3)
       tsdown:
         specifier: ^0.12.7
         version: 0.12.7(typescript@5.8.3)
@@ -281,6 +284,12 @@ packages:
     peerDependenciesMeta:
       prettier:
         optional: true
+
+  prettier-plugin-sort-json@4.1.1:
+    resolution: {integrity: sha512-uJ49wCzwJ/foKKV4tIPxqi4jFFvwUzw4oACMRG2dcmDhBKrxBv0L2wSKkAqHCmxKCvj0xcCZS4jO2kSJO/tRJw==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      prettier: ^3.0.0
 
   prettier@3.5.3:
     resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
@@ -575,6 +584,10 @@ snapshots:
       sort-package-json: 3.2.1
       synckit: 0.11.8
     optionalDependencies:
+      prettier: 3.5.3
+
+  prettier-plugin-sort-json@4.1.1(prettier@3.5.3):
+    dependencies:
       prettier: 3.5.3
 
   prettier@3.5.3: {}

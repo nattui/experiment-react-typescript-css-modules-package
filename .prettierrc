@@ -1,6 +1,5 @@
 {
-  "plugins": [
-    "prettier-plugin-packagejson"
-  ],
+  "jsonRecursiveSort": true,
+  "plugins": ["prettier-plugin-packagejson", "prettier-plugin-sort-json"],
   "semi": false
 }
