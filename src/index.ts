@@ -1,3 +1,2 @@
-import { Test, type TestProps } from "./test"
-
-export { Test, type TestProps }
+export * from "./button"
+export * from "./button-2"

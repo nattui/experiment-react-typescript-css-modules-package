@@ -1,6 +1,6 @@
 {
   "name": "@nattui/experiment-tsdown",
-  "version": "0.0.21",
+  "version": "0.0.29",
   "type": "module",
   "exports": "./dist/index.js",
   "main": "./dist/index.js",
@@ -10,20 +10,17 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsdown",
-    "dev": "tsdown --watch",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "prepublishOnly": "pnpm run build",
     "update": "pnpx npm-check-updates --upgrade"
-  },
-  "dependencies": {
-    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@types/react": "^19.1.8",
     "prettier": "^3.5.3",
     "prettier-plugin-packagejson": "^2.5.15",
     "prettier-plugin-sort-json": "^4.1.1",
-    "tsdown": "^0.12.7",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
